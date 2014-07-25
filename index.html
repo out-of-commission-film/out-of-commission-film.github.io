@@ -1,39 +1,497 @@
----
-name: index
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
 
-<div class=video-wrapper>
-  <iframe id=player src="//player.vimeo.com/video/91637810?title=0&portrait=0&byline=0&api=1&player_id=player" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+    <title>Out of Commission</title>
 
-<div class=content>
-  <p>
-    <em>Out of Commission</em> is a documentary that will explore the implications of <a href="http://www.biblegateway.com/passage/?search=Matthew+28%3A16-20&version=ESV">the great commission</a> and its applications in the modern American church.
+    <meta name=description content="Out of Commission: a documentary exploring what it really means to live out the great commission as Jesus Christ commands in Matthew 28">
 
-    <!-- used dan benjamin's http://hivelogic.com/enkoder/ to obfuscate the
-    email address -->
+    <meta name=viewport content="width=device-width">
 
-    <script type="text/javascript">
-      //<![CDATA[
-      <!--
-      var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-      "=51){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-      ".substr(0,ol);}f(\")54,\\\";N500\\\\7,8c/BP{xcvS^Qj.mna*000\\\\<R({r730\\\\" +
-      "Jpkkwc120\\\\Z>`iksr\\\\WsciA 030\\\\Q>zsM 330\\\\520\\\\010\\\\[610\\\\410" +
-      "\\\\720\\\\520\\\\720\\\\U230\\\\430\\\\330\\\\500\\\\120\\\\200\\\\430\\\\" +
-      "200\\\\n\\\\500\\\\300\\\\Ir\\\\520\\\\t\\\\010\\\\D120\\\\r\\\\700\\\\@1;+" +
-      "9/t\\\\y,47!:<120\\\\s410\\\\r+!8\\\"\\\\>ij330\\\\?7%7,$-J]qj&lo720\\\\610" +
-      "\\\\710\\\\220\\\\720\\\\420\\\\720\\\\4V320\\\\330\\\\S600\\\\400\\\\?R230" +
-      "\\\\610\\\\t\\\\100\\\\010\\\\430\\\\330\\\\X310\\\\n\\\\700\\\\M020\\\\400" +
-      "\\\\420\\\\17<,j.80#620\\\\;1%7%#u!9 \\\"\\\\+$j330\\\\{#!1*a!300\\\\430\\\\"+
-      "520\\\\RW_MQEA330\\\\@]W\\\\\\\\ELAI\\\"(f};o nruter};))++y(^)i(tAedoCrahc." +
-      "x(edoCrahCmorf.gnirtS=+o;721=%y;2=*y))y+54(>i(fi{)++i;l<i;0=i(rof;htgnel.x=" +
-      "l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"                                       ;
-      while(x=eval(x));
-      //-->
-      //]]>
+    <style>
+
+      /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+      html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
+
+      audio,
+      canvas,
+      progress,
+      video {
+        display: inline-block;
+        vertical-align: baseline;
+      }
+
+      audio:not([controls]) {
+        display: none;
+        height: 0;
+      }
+
+      [hidden],
+      template {
+        display: none;
+      }
+
+      a {
+        background: transparent;
+      }
+
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+
+      abbr[title] {
+        border-bottom: 1px dotted;
+      }
+
+      b,
+      strong {
+        font-weight: bold;
+      }
+
+      dfn {
+        font-style: italic;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      mark {
+        background: #ff0;
+        color: #000;
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      img {
+        border: 0;
+      }
+
+      svg:not(:root) {
+        overflow: hidden;
+      }
+
+      figure {
+        margin: 1em 40px;
+      }
+
+      hr {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 0;
+      }
+
+      pre {
+        overflow: auto;
+      }
+
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+
+      button {
+        overflow: visible;
+      }
+
+      button,
+      select {
+        text-transform: none;
+      }
+
+      button,
+      html input[type="button"],
+      input[type="reset"],
+      input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+
+      button[disabled],
+      html input[disabled] {
+        cursor: default;
+      }
+
+      button::-moz-focus-inner,
+      input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+
+      input {
+        line-height: normal;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      input[type="search"] {
+        -webkit-appearance: textfield;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+
+      input[type="search"]::-webkit-search-cancel-button,
+      input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+      }
+
+      legend {
+        border: 0;
+        padding: 0;
+      }
+
+      textarea {
+        overflow: auto;
+      }
+
+      optgroup {
+        font-weight: bold;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td,
+      th {
+        padding: 0;
+      }
+
+      /************************************************************************
+       * end of normalize.css
+       ************************************************************************/
+
+      html {
+        background-color: black;
+        color: white;
+        font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+      }
+
+      .hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 85vh;
+        background: url(img/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .centered-inline-content {
+        text-align: center;
+      }
+
+      .logo {
+        display: block;
+      }
+
+      .logo img {
+        max-width: 90vw;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      p {
+        text-align: justify;
+        line-height: 1.4em;
+      }
+
+      .nav {
+        margin-top: 85vh;
+      }
+
+      .nav a, #mobile-contact a {
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 15vh;
+        margin: 0 20px;
+        letter-spacing: 0.2em;
+      }
+
+      #narrative {
+        padding: 40px;
+      }
+
+      .content {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .next, .previous {
+        display: table;
+        height: 100%;
+        font-size: 30px;
+        margin: 10px 20px;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .next span, .previous span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .next {
+        right: 0;
+      }
+
+      .previous {
+        left: 0;
+      }
+
+      #mobile-contact {
+        display: none;
+      }
+
+      @media all and (-webkit-min-device-pixel-ratio: 2) {
+        .hero {
+          height: auto;
+          position: static;
+          background: none;
+        }
+
+        .nav {
+          display: none;
+        }
+
+        .next, .previous {
+          display: none;
+        }
+
+        #mobile-contact {
+          display: block;
+        }
+
+        p {
+          font-weight: 200;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="hero img0">
+      <a class="logo centered-inline-content" href=/>
+        <img src=/img/logo.png />
+      </a>
+
+      <a href="javascript:void(0)" class=previous>
+        <span>&#9664;</span>
+      </a>
+
+      <a href="javascript:void(0)" class=next>
+        <span>
+          &#9654;
+        </span>
+      </a>
+    </div>
+
+    <div class="nav centered-inline-content">
+      <a href="#trailer">Trailer</a>
+      <a href="#narrative">Narrative</a>
+      <a href="mailto:outofcommissionfilm@gmail.com">Contact</a>
+    </div>
+
+    <div id=trailer class=centered-inline-content></div>
+
+    <div id=mobile-contact class=centered-inline-content>
+      <a href="mailto:outofcommissionfilm@gmail.com">Contact</a>
+    </div>
+
+    <div id=narrative>
+      <div class=content>
+        <p>
+        Hello, My name is Steven. I paint houses for a living and I am a youth
+        minister on the side. I have had some big questions running through my
+        mind lately. I have a burning passion in my heart to understand who
+        Christ is and how I should live my life to serve Him. Also, because of
+        this passion, I want others to know about Christ. And why not? If I am
+        willing to go all out for Jesus, the man from Nazareth, why shouldn't I
+        share this hope with all those I come in contact with? That leads to
+        the ultimate question that persists within me: why don’t the majority
+        of Christians evangelize? According to Bible.org, Ninety-five percent
+        of all Christians have never won a soul to Christ. Eighty percent of
+        all Christians do not consistently witness for Christ, and less than
+        two percent are involved in the ministry of evangelism. 
+        </p>
+
+        <p>
+        Why? What is the reason that keeps the majority of Christians from
+        going out and witnessing to the lost? Whether it be to strangers,
+        friends or coworkers why is it so difficult for Christians to proclaim
+        the gospel outside of church and bible studies? Why are the majority of
+        Christians Out of Commission?
+        </p>
+
+        <p>
+        After sharing my heart with friend and filmmaker Sam Ramsey, We decided
+        to make a documentary. The documentary will explore questions we both
+        have about Christianity and evangelism. We will conduct interviews with
+        pastors, missionaries, evangelists, and people who have been led to
+        Christ through the great commission.
+        </p>
+
+        <p>
+        We want to ask challenging questions with the intent of inspiring the
+        viewer to be obedient to Christ in a way that ultimately glorifies His
+        name. After all, evangelism is about pointing people to our wonderful
+        Savior. We truly desire this film to be Christ centered. We aim to
+        glorify Christ above all with this film, not to glorify any man. We
+        have no intention of pushing any one doctrine. We have no intention of
+        implying there is one way to evangelize or that everyone should do it
+        the way we do. Our intention is to focus the film on Christ and our
+        deeply rooted need for a savior. We look forward to the coming days as
+        we meet new people and develop relationships that point our lives and
+        the lives of those we come in contact with to Christ Jesus.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45308206-2', 'outofcommissionfilm.com');
+      ga('send', 'pageview');
+
+      function $(s) { return [].slice.call(document.querySelectorAll(s)); }
+
+      var images = [
+          'FrameGrab-3.jpg'
+        , 'FrameGrab-5.jpg'
+        , 'FrameGrab-2.jpg'
+        , '6th-5.jpg'
+        , 'paint.jpg'
+        , '6th-4.jpg'
+        , '6th-3.jpg'
+        , '6th.jpg'
+        , 'paint2.jpg'
+        , '6th-2.jpg'
+      ];
+
+      var iframeStr = '<iframe width=WIDTH height=HEIGHT id=player src="//player.vimeo.com/video/91637810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      var styleText = images.map(function(img, i) {
+          return '.hero.img' + (i + 1) + ' { background: url("/img/gallery/' + img + '") no-repeat center center fixed; }';
+        })
+        .join('\n');
+      var bgStyleEl = document.createElement('style');
+      var width = document.body.offsetWidth;
+
+      bgStyleEl.innerHTML = styleText;
+      document.head.appendChild(bgStyleEl);
+
+      $('.next, .previous').forEach(function(el) {
+        el.addEventListener('mouseup', function() {
+          var $hero = $('.hero')[0];
+          var cur = +$hero.className.split(' ')[1].replace(/^img/, '');
+          var next = /next/.test(this.className)? ++cur : --cur;
+
+          if (next >= images.length)
+            next = 0;
+          else if (next < 0)
+            next = images.length - 1;
+
+          $hero.className = 'hero img' + next;
+        });
+      });
+
+      $('#trailer')[0].innerHTML = iframeStr
+        .replace('WIDTH', width)
+        .replace('HEIGHT', Math.floor(width / 2.35));
+
     </script>
-    for more information.
-  </p>
-</div>
+
+  </body>
+</html>
